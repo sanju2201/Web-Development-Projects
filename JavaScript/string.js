@@ -52,6 +52,34 @@
 
 // <<<<--------String Concatination---------->>>>
 
+// let firstName = "Sanju";
+// let lastName = "Manna";
+
+// let fullName = firstName + lastName;
+// let fullName = firstName +" "+ lastName;
+// console.log(fullName);  // output ==> Sanju Manna
+
+// let str1 =  "10";
+// let str2 = "17";
+
+// let newStr = str1 + str2;
+// console.log(newStr);  // output ==> 1017
+
+// let newStr = +str1 + +str2;
+// console.log(newStr); // output ==> 27
+// console.log(typeof(newStr)); // output ==> number
+
+// <<<<--------template String---------->>>>
+
+let firstName = "sanju";
+let city = "bhilai";
+
+let sentence1 = "my name is " + firstName + " I live in " + city;
+console.log(sentence1);  // 1st way to write
+
+// using template String
+let sentence2 = `my name is ${firstName} I live in ${city}`;
+console.log(sentence2); // 2nd way using backtick dollerSign{variable}
 
 
 
