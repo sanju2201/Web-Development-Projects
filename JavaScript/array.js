@@ -43,7 +43,7 @@
 
 // let fruits = ["apple","mango", "grapes"];
 
-// .slice(start inex) Method
+// .slice(start index, end index(excluded) Method
 // let clonedArray1 = fruits.slice(0); // slice(start index) // slice method will clone a array from the starting index to till the end.
 // console.log(clonedArray1);
 
@@ -68,10 +68,40 @@
 // let newArray3 = [...fruits,"banana","pineapple"];
 // console.log(newArray3);
 
-// <<<<--------Loops in array---------->>>>
+// Create a new Array Element same as previous with All Element UpperCase
+// let fruits2 = [];
+// for(let i=0;i<fruits.length;i++){
+//     fruits2.push(fruits[i].toUpperCase());
+// }
+// console.log(fruits2);
 
-let fruits = ["apple","mango", "grapes"];
+// <<<<--------Constant array---------->>>>
 
+//Prefer to make an array always const, So that its reference can't be change
 
+// const fruits = ["apple", "banana", "grapes"];
+// console.log(fruits);
+// fruits.push("orange", "pineapple","lichy");
+// console.log(fruits);
 
+// <<<<--------Array Destructure---------->>>>
 
+const myArray = ["item1", "item2", "Item3", "Item4", "Item5"];
+
+// let [myItem1 ,myItem2] = myArray; // Elements of the array can be use as normal Variables
+// console.log(myItem1);
+// console.log(myItem2);
+
+// myItem1 = "sanju";
+// myItem2 = "manna";
+// console.log(myItem1);
+// console.log(myItem2);
+// in case there are less elements in the array as compare to the number of variables then remaining variables will show undefined
+// in case there is more element are present in the array which are not been used by variable during destructuring so they will leave as it is in the array
+
+// if we want to skip any value from the array we can do it by mentioning commas
+
+// let [myItem1, ,myItem2] = myArray; // the middle element will skipped
+
+let [myItem1,myItem2,...myNewArray] = myArray;
+console.log(myNewArray);
