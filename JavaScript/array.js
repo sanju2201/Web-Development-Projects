@@ -25,7 +25,7 @@
 
 // <<<<--------.push() .pop() .shift() .unshift() Method---------->>>>
 
-let fruits = ["apple","mango", "grapes"];
+// let fruits = ["apple","mango", "grapes"];
 
 // fruits.push("potato"); // to add at the end
 // console.log(fruits);
@@ -39,6 +39,39 @@ let fruits = ["apple","mango", "grapes"];
 // fruits.shift(); // to remove from the start and return the value
 // console.log(fruits);
 
-// <<<<-------- Method---------->>>>
+// <<<<-------- Cloning Array Method---------->>>>
+
+// let fruits = ["apple","mango", "grapes"];
+
+// .slice(start inex) Method
+// let clonedArray1 = fruits.slice(0); // slice(start index) // slice method will clone a array from the starting index to till the end.
+// console.log(clonedArray1);
+
+// .concat(fruits) Method
+// let clonedArray2 = [].concat(fruits);
+// console.log(clonedArray2);
+
+// Spread operator
+// let clonedArray3 = [...fruits];
+// console.log(clonedArray3);
+
+// Create a new Array that should contains elements of old array and two more elements to be add
+// 1st way
+// let newArray1 = fruits.slice(0).concat(["banana","pineapple"]);
+// console.log(newArray1);
+
+// //2nd way
+// let newArray2 = [].concat(fruits,["banana","pineapple"]);
+// console.log(newArray2);
+
+// // 3rd way
+// let newArray3 = [...fruits,"banana","pineapple"];
+// console.log(newArray3);
+
+// <<<<--------Loops in array---------->>>>
+
+let fruits = ["apple","mango", "grapes"];
+
+
 
 
