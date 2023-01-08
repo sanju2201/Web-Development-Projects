@@ -103,5 +103,5 @@ const myArray = ["item1", "item2", "Item3", "Item4", "Item5"];
 
 // let [myItem1, ,myItem2] = myArray; // the middle element will skipped
 
-let [myItem1,myItem2,...myNewArray] = myArray;
-console.log(myNewArray);
+// let [myItem1,myItem2,...myNewArray] = myArray;
+// console.log(myNewArray);
