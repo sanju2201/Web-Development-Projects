@@ -106,3 +106,73 @@
 
 // <<<<--------Spread Operator---------->>>>
 
+// const obj1 = {
+//     key1 : "value1",
+//     key2 : "value2",
+// }
+
+// const obj2 ={
+//     key1 : "value5",
+//     key3 : "value3",
+//     key4 : "value4",
+// }
+
+// const resultObj = {...obj1,...obj2};
+// const resultObj = {...obj1,...obj2,
+//                    key6:"value6",
+//                    key7 : "value7"};
+// console.log(resultObj);
+
+// const charObject = {..."abcdefghijklmnopqrstuvwxyz"};
+// console.log(charObject);
+
+// <<<<--------Object Destructuring---------->>>>
+
+// const myDetails = {
+//     firstName : "sanju",
+//     lastName : "manna",
+//     city : "bhilai",
+//     age : "24"
+// };
+
+
+// Using destructuring we can use property of the objects and variable
+// const {firstName,lastName} = myDetails;
+// console.log(firstName);
+// console.log(lastName);
+
+// lets take we want to store 1st 2 property as variable rest we want to store as object
+
+// const {firstName,lastName,...restPropertyStoreAsObject} = myDetails;
+// console.log(restPropertyStoreAsObject);
+
+// If we want to create a varible from a key:value but want to take different name for key or variable but property need to be the same
+// let {firstName:myName,lastName:mySurname}=myDetails;
+// console.log(myName,mySurname);
+
+// <<<<--------Object Inside Array---------->>>>
+
+// const users = [
+//     {userId:1,firstName:"sanju",gender:"male",city:"bhilai",age:24},
+//     {userId:2,firstName:"manna",gender:"male",city:"raipur",age:18},
+//     {userId:3,firstName:"nikki",gender:"female",city:"bhilai",age:24},
+// ]
+// console.log(users);
+// for(let user of users){
+//     console.log(user.firstName);
+//     console.log(user.city);
+// }
+
+// Destructure
+
+// const [user1,user2,user3] = users;
+// console.log(user3);
+
+// To destructure a perticular property from a Object and save it to variable
+
+// const [{firstName:userName,city},,{userId:idNumber}] = users; // escape the 2nd user
+// console.log(userName);
+// console.log(city);
+// console.log(idNumber);
+
+// <<<<--------   ---------->>>>
