@@ -15,7 +15,38 @@ const person = {name:"sanju",
                 parents : {mom : "sharmila",
                            dad : "asit"},
                 email : "sanju@manna",
-                mobile:["8435181981","7000509658"]};
+                mobile:["8435181981","7000509658"],
+                "last name" : "manna"};
 
-console.log(person);
-console.log(person.parents.dad);
+// if we want to add any property name with space we have to write with "property name" : "xyz";                
+
+// console.log(person);
+// console.log(person.parents.dad);
+// console.log(person.mobile[1]);
+
+// <<<<--------Property adding using dot notaion---------->>>>
+
+// To add new property or key:value pair to the object using dot notation
+// person.gender = "male";
+// person.liveIn = "bhilai";
+// console.log(person);
+
+// <<<<--------Property adding using Bracket notaion---------->>>>
+
+// We can also called a property of an object using ["Property"]
+// This method is usefull if we store any key with space as String which is otherwise not allowed
+// console.log(person["parents"]);
+// console.log(person["last name"]);
+
+// To add new property or key:value pair to the object using bracket notation
+// person["Village"] = "kolkata";
+// console.log(person);
+
+// to add a key which is coimg from a variable or constant
+// const keyToBeAdd = "DOB"; // we need to add key as DOB
+
+// person["keyToBeAdd"] = "22-01-1998"; // Wrong way, this will be store0 as keyToBeAdd : "date"
+// console.log(person);
+
+// person[keyToBeAdd] = "22-01-1998"; // Correct way, this will be store as DOB : "date"
+// console.log(person);
