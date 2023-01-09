@@ -18,6 +18,8 @@
 // 2. if there is one line of code in literal or body, curly braces are not required.
 // 3. if there is only 1 line of code in body and that also return statement than the return keyword is also optional.
 
+// const functionName = ()=>{}; 
+
 // 1st way
 // const isEvenArrow1 = (num) => {
 //     return num % 2 === 0;
