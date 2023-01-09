@@ -9,14 +9,14 @@
 // console.log(person.name);
 // console.log(person.age);
 
-const person = {name:"sanju",
-                age:"24",
-                hobbies : ["cricket","football","Coding"],
-                parents : {mom : "sharmila",
-                           dad : "asit"},
-                email : "sanju@manna",
-                mobile:["8435181981","7000509658"],
-                "last name" : "manna"};
+// const person = {name:"sanju",
+//                 age:"24",
+//                 hobbies : ["cricket","football","Coding"],
+//                 parents : {mom : "sharmila",
+//                            dad : "asit"},
+//                 email : "sanju@manna",
+//                 mobile:["8435181981","7000509658"],
+//                 "last name" : "manna"};
 
 // if we want to add any property name with space we have to write with "property name" : "xyz";                
 
@@ -50,3 +50,59 @@ const person = {name:"sanju",
 
 // person[keyToBeAdd] = "22-01-1998"; // Correct way, this will be store as DOB : "date"
 // console.log(person);
+
+// <<<<--------Iterate over the Object---------->>>>
+
+// const person = {name:"sanju",
+//                 age:"24",
+//                 hobbies : ["cricket","football","Coding"],
+//                 parents : {mom : "sharmila",
+//                            dad : "asit"},
+//                 email : "sanju@manna",
+//                 mobile:["8435181981","7000509658"],
+//                 "last name" : "manna"};
+
+// To treverse through the object 
+//  for(let key in person){
+//      console.log(person[key]);
+//  }
+
+// to print keys and values we can use tempate string
+// for(let key in person){
+//     // console.log(`${key} : ${person[key]}`); 
+//     // or
+//     console.log(key, " : ",person[key]);
+// }
+
+// <<<<--------Getting all keys or values as an Array---------->>>>
+
+// const keyArray = Object.keys(person);
+// console.log(keyArray);
+
+// const valuesArray = Object.values(person);
+// console.log(valuesArray);
+
+// <<<<--------Computed Properties---------->>>>
+
+// const key1 = "object1";
+// const key2 = "object2";
+
+// const value1 = "myValue1";
+// const value2 = "myValue2";
+
+// 1st Way
+// const myObj = {
+//     [key1]:value1,
+//     [key2]:value2
+// };
+// console.log(myObj);
+
+//2nd Way
+
+// const myObj = {};
+// myObj[key1] = value1;
+// myObj[key2] = value2;
+// console.log(myObj);
+
+// <<<<--------Spread Operator---------->>>>
+
