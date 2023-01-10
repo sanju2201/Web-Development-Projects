@@ -34,3 +34,64 @@
 // const addTwo = (num1,num2) => num1 + num2;
 // console.log(addTwo(9,5));
 
+// <<<<--------Functions inside Function---------->>>>
+
+// function app(a,b){
+//     const twoSum = (num1,num2)=>{
+//         console.log(num1+num2);
+//     }
+
+//     const miltiply = function(x,y){
+//         return x*y;
+//     }
+//     twoSum(a,b);
+//     console.log(miltiply(a,b));
+// console.log("Inside function");
+// };
+// app(5,2);
+
+// <<<<--------LEXICAL SCOPE---------->>>>
+
+// const myVar = "value1";
+// function myApp(){
+//     function myFun(){
+//         // const myVar = "value23";
+//         console.log("inside mFunc" ,myVar);
+//     }
+//     console.log(myVar);
+//     myFun();
+// }
+// myApp();
+
+// result at start
+// value1
+// inside mFunc value23
+
+// as line 58 comment out result will be
+// value1
+// inside mFunc value1
+// beacuse functions are tring to find the value for the variable 
+// if they dont get value at there own level, they will search it on lexical parent
+
+
+// <<<<--------block Scope and  Function Scope---------->>>>
+
+// let and const ==> block Scope { block scope, variable created inside block spaces cannot be access outside the block scope}
+//    {
+//     let x ="sdsd";
+//     console.log("Only access inside this block",x);
+//    }
+
+// var ==> function Scope
+// variable created with var can be access anywhere and can be modified anywhere
+
+// <<<<--------Defalut Parameters---------->>>>
+
+// function myName(firstName ="sanju",lastName ="manna"){
+//     console.log(firstName +" "+lastName);
+// }
+// myName("nikki","sanju");
+
+// <<<<--------Rest Parameters---------->>>>
+
+
