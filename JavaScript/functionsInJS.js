@@ -94,4 +94,48 @@
 
 // <<<<--------Rest Parameters---------->>>>
 
+// function myFun(a,b,...c){
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+// myFun(1,2,3,4,5,6,7,8,9);
 
+// here ...c is the rest parameter, 1 assign to a, 2 assign to b, rest values are assign to c as an array.
+
+// function addAll(...restParameter){
+//     let sum =0;
+//     for(let parameter of restParameter){
+//         sum += parameter;
+//     }
+//     console.log(sum);
+// }
+// addAll(1,2,3,4,5,6,7,8,9);
+
+// ...restParameter will store all values as Array
+
+// <<<<--------Parameter Destructuring ---------->>>>
+
+// const obj = {
+//     firstName : "sanju",
+//     lastName : "manna",
+//     gender : "male"
+// }
+
+// 1st Way
+// function myDetails(object){
+//     console.log(object.firstName);
+//     console.log(object.lastName);
+//     console.log(object.gender);
+// }
+// myDetails(obj);
+
+// 2nd way using destructing
+// function myDetails({firstName:fName,lastName,gender}){
+//     console.log(fName);
+//     console.log(lastName);
+//     console.log(gender);
+// }
+// myDetails(obj);
+
+// <<<<--------Callback Function ---------->>>>
