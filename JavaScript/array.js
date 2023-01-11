@@ -86,7 +86,7 @@
 
 // <<<<--------Array Destructure---------->>>>
 
-const myArray = ["item1", "item2", "Item3", "Item4", "Item5"];
+// const myArray = ["item1", "item2", "Item3", "Item4", "Item5"];
 
 // let [myItem1 ,myItem2] = myArray; // Elements of the array can be use as normal Variables
 // console.log(myItem1);
@@ -105,3 +105,85 @@ const myArray = ["item1", "item2", "Item3", "Item4", "Item5"];
 
 // let [myItem1,myItem2,...myNewArray] = myArray;
 // console.log(myNewArray);
+
+// <<<<--------imp Array Methods---------->>>>
+
+// forEach
+// map()
+// filter()
+// reduce()
+
+// <<<<--------forEach()---------->>>>
+
+// 1st example
+// const numbers = [2,4,6,8,10];
+
+// function myFunc(number,index){
+//     console.log(`index is ${index} and number is ${number}`);
+// }
+
+// normal traversal using for loop
+// for(let i=0;i<numbers.length;i++){
+//     myFunc(numbers[i],i);
+// }
+
+// using forEach() ==> forEach function take aa callback function and call by itself
+// numbers.forEach(myFunc); // forEach always pass 1st parameter as number and 2nd parameter as index
+
+// we can also directly write the function in forEach directly
+
+// numbers.forEach(function(number,index){
+// console.log(`index is ${index} and number is ${number*2}`);
+// });
+
+// 2nd example  ==> there is array of objects
+
+// const users = [
+// {firstName :"sanju",age : 25,gender :"male"},
+// {firstName :"nikki",age : 24,gender :"female"},
+// {firstName :"manna",age : 23,gender :"male"},
+// ];
+
+// users.forEach((user,index)=>{
+// console.log(`User at index ${index} having details as ${user.firstName}, age ${user.age} and Gender ${user.gender}.`);
+// });
+
+// <<<<--------map()---------->>>>
+
+// map function will take a callback function as argument and return a answer array
+
+// 1st Example
+// const numbers  = [1,2,3,4,5];
+
+// const square = function(number){
+//     return number*number;
+// }
+// const result = numbers.map(square);
+// console.log(result);
+
+// we can also create arrow functions
+// const result = numbers.map((number,index)=>{
+//     return `index: ${index} - value ${number**2}`;
+// });
+// console.log(result);
+// map function will return an Array
+// So the requirement is that the callback function should return some values otherwise map function will return an array of undefined.
+
+// 2nd Example
+
+// const users = [
+// {firstName :"sanju",age : 25,gender :"male"},
+// {firstName :"nikki",age : 24,gender :"female"},
+// {firstName :"manna",age : 23,gender :"male"},
+// ];
+
+// const fistNameArray = users.map((user)=>{
+//     return user.firstName;
+// });
+// console.log(fistNameArray);
+
+// <<<<--------filter()---------->>>>
+
+// filter function will return an Array on boolean value true or false
+
+
