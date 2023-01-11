@@ -139,3 +139,45 @@
 // myDetails(obj);
 
 // <<<<--------Callback Function ---------->>>>
+
+// function myFunc(name){
+//     console.log("this function is callback inside final Function",name);
+// }
+
+// function newFunc(callback){
+//   console.log("inside final Function")
+//   callback("sanju");
+// }
+// newFunc(myFunc);
+
+// Callback functions are used in real world project - like a function take input some data that is fetched from data base
+// so first we can store it in some variable than we can call the callback function and pass the data to it.
+
+// <<<<--------Function returning Function ---------->>>>
+
+// 1st Way
+// function thisFunCReeturnFunc(){
+//     console.log("please return a function");
+//     function returningFunc(){
+//         console.log("this is returned function");
+//     }
+//     return returningFunc;
+
+// }
+// const ans = thisFunCReeturnFunc();
+// // console.log(ans);
+// ans();
+
+// 2nd Way
+
+// function myFunc(){
+//     console.log("pahle isko print kr");
+//     return ()=> console.log("return hoke isko print kar");
+// }
+// const returnedFunc = myFunc();
+// // console.log(returnedFunc);
+// returnedFunc();
+
+// <<<<--------Higher Order Function ---------->>>>
+
+// if any function taking input parameter as function or returning a function or doing both together is called higher order functions.
