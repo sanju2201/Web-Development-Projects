@@ -165,9 +165,41 @@
 
 // <<<<--------clone nodes---------->>>>
 
-const ul = document.querySelector(".todo-list");
-const li = document.createElement("li");
-li.textContent = "This is 1st Item";
-const li2 = li.cloneNode(true); // true will deep clone the Node so the content will also coppied
-ul.prepend(li);
-ul.append(li2);
+// const ul = document.querySelector(".todo-list");
+// const li = document.createElement("li");
+// li.textContent = "This is 1st Item";
+// const li2 = li.cloneNode(true); // true will deep clone the Node so the content will also coppied
+// ul.prepend(li);
+// ul.append(li2);
+
+// <<<<--------Some old method to support poor Internet Explorer---------->>>>
+// appendChild
+// insertBefore
+// replaceChild
+// removeChild
+
+// const ul = document.querySelector(".todo-list");
+// const li = document.createElement("li");
+// li.textContent = "new todo";
+// ul.appendChild(li);
+
+// const ul = document.querySelector(".todo-list");
+// const li = document.createElement("li");
+// // for insertBeofre we need a reference node before that we need to add
+// const ref = document.querySelector(".todo-list li");
+// li.textContent = "new todo";
+// ul.insertBefore(li,ref);
+
+// const ul = document.querySelector(".todo-list");
+// const li = document.createElement("li");
+// // for replaceChild we need a reference node with that we replace the new node
+// const ref = document.querySelector(".todo-list li");
+// li.textContent = "new todo";
+// ul.replaceChild(li,ref);
+
+// const ul = document.querySelector(".todo-list");
+// const ref = document.querySelector(".todo-list li");
+// ul.removeChild(ref);
+
+// <<<<--------Static list and live list---------->>>>
+
