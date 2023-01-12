@@ -79,3 +79,95 @@
 
 // <<<<--------innerHTML---------->>>>
 
+// const headLine = document.querySelector(".headline");
+// console.log(headLine.innerHTML); // whatever present inside(tags,content) this will print
+// headLine.innerHTML = "<h1>Inner html changed</h1>" // this will set the new innerHTML
+// headLine.innerHTML += "<p> this is a paragraph tag</p>"; // this will append new element to the previoue one
+// console.log(headLine.innerHTML);
+
+// <<<<--------classList---------->>>>
+
+// 1st Exmaple
+// const sectionTodo = document.querySelector(".section-todo");
+// console.log(sectionTodo.classList); // classlist will return what are the classes available in that perticular section
+
+// adding a new Class to a element
+// sectionTodo.classList.add("bg-dark");
+
+// remove Class to a element
+// sectionTodo.classList.remove("container"); // This will remove the container class and change the property
+
+// checking a perticular Class is present or not
+// const checkContains = sectionTodo.classList.contains("container");
+// console.log(checkContains); // return true as present
+
+// toggle (on/off) a class in a element
+// sectionTodo.classList.toggle("bg-dark");
+
+// 2nd Exmaple
+// const header = document.querySelector(".header");
+// console.log(header);// this wil print the header Element  
+// console.log(header.classList); // only 1 class present
+// header.classList.add("bg-dark"); // this will change the property, class property seqence in CSS file should be maintained
+// console.log(header.classList);
+// console.log(header); // here if we check both classes are available
+
+// <<<<--------Creating HTML element using JS---------->>>>
+
+// document.createElement();
+// append
+// prepend
+// remove
+
+//1st Way
+// const newTodoItem = document.createElement("li");
+// const newTodoItemText = document.createTextNode("This is New Item");
+// const todoList = document.querySelector(".todo-list");
+// newTodoItem.append(newTodoItemText);
+// todoList.append(newTodoItem);
+// console.log(newTodoItem);
+
+// 2nd way
+// const newTodoItem = document.createElement("li");
+// newTodoItem.textContent = "this is a new Item";
+// const todoList = document.querySelector(".todo-list");
+// // todoList.append(newTodoItem);// append always add at the end
+// todoList.prepend(newTodoItem); // prepend add element at the top
+// console.log(newTodoItem);
+
+// remove element
+
+// const todo1 = document.querySelector(".todo-list li");
+// console.log(todo1)
+// todo1.remove(); 
+
+// before / after
+
+// const newTodoItem = document.createElement("li");
+// newTodoItem.textContent = "This is New Item";
+// const todoList = document.querySelector(".todo-list");
+// todoList.before(newTodoItem);  // add element before the selected element
+// todoList.after(newTodoItem); add element after the selected element
+
+// <<<<--------.insertAdjacentHTML(where,html)---------->>>>
+
+// beforebegin
+// afterbegin
+// beforeend
+// afterend
+
+// const todoList = document.querySelector(".todo-list");
+// todoList.insertAdjacentHTML("beforebegin","<li> this is new text</li>");
+// todoList.insertAdjacentHTML("afterbegin","<li> this is new text</li>");
+// todoList.insertAdjacentHTML("beforeend","<li> this is new text</li>");
+// todoList.insertAdjacentHTML("afterend","<li> this is new text</li>");
+// console.log(todoList);
+
+// <<<<--------clone nodes---------->>>>
+
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+li.textContent = "This is 1st Item";
+const li2 = li.cloneNode(true); // true will deep clone the Node so the content will also coppied
+ul.prepend(li);
+ul.append(li2);
